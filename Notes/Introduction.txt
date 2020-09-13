@@ -1,0 +1,96 @@
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> #Introductory python codes using divison and remainder to find even an dodd numbers, lists, tuples, sets, dictionary, and length and sum
+>>> 
+>>> 
+>>> division_with_remainder=12//5
+>>> print(division_with_remainder)
+2
+>>> remainder=12%5
+>>> print(remainder)
+2
+>>> 
+>>> 
+>>> x=13
+>>> remiander=x%2
+>>> print (remiander)
+1
+>>> #I have successfuly used division by divinf 12/5 first for the whole number then found the remainder of it. I have also determined that 13 is an even number as it has the remainder of 1. 0 as a remainder denotes a number to be even.
+>>> 
+>>> 
+>>> friends=["Zakia", "Zahed", "Mahbub"]
+>>> friends.append("Messi")
+>>> print(friends)
+['Zakia', 'Zahed', 'Mahbub', 'Messi']
+>>> friends.remove("Messi")
+>>> print(friends)
+['Zakia', 'Zahed', 'Mahbub']
+>>> # With this code i have made a list that is meant to change, thus adding my friend and later removing him from my list
+>>> 
+>>> comma_seperated=",".join(friends)
+>>> print(f"My friends are {comma_sperated}.")
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    print(f"My friends are {comma_sperated}.")
+NameError: name 'comma_sperated' is not defined
+>>> 
+>>> 
+>>> comma_seperated=",".join(friends)
+>>> print(f"My friends are {comma_seperated}.")
+My friends are Zakia,Zahed,Mahbub.
+>>> #Here i have joined the list of my friends to print who my friends are in a sentence
+>>> 
+>>> 
+>>> cities_ive_lived= ("Beanibazar", "Detroit", "Warren",)
+>>> cities_ive_lived=cities_ive_lived + ("Madison, Heights",)
+>>> print(cities_ive_lived)
+('Beanibazar', 'Detroit', 'Warren', 'Madison, Heights')
+>>> print(f"I currently live in the city of {cities_ive_lived[-1]}.")
+I currently live in the city of Madison, Heights.
+>>> #I created a tuple, which is not meant to change unlike a list, of all the cities i have lived in since i was born. Then, I printed the city i currently live in by pinpointing to an element in the tuple
+>>> 
+>>> 
+>>> bengali_food={"Curry", "Fish", "Rice"}
+>>> american_food={"Pizza", "Burgers", "Pasta",}
+>>> print (bengali_food)
+{'Fish', 'Rice', 'Curry'}
+>>> american_food.add("Rice", "Sushi",)
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    american_food.add("Rice", "Sushi",)
+TypeError: add() takes exactly one argument (2 given)
+>>> american_food.add("Rice",)
+>>> print(american_food)
+{'Pizza', 'Burgers', 'Pasta', 'Rice'}
+>>> american_food.remove("Pasta")
+>>> 
+>>> bengali_american_food= bengali_food.union(american_food)
+>>> print(bengali_american_food)
+{'Pizza', 'Curry', 'Fish', 'Burgers', 'Rice'}
+>>> shared_food= bengali_food.intersection(american_food)
+>>> print (shared_food)
+{'Rice'}
+>>> unshared_food=bengali_food.symmetric_difference(american_food)
+>>> print (unshared_food)
+{'Pizza', 'Curry', 'Fish', 'Burgers'}
+>>> 
+>>> #I have created two sets, American and Bengali food, and distinguised between what food items they share and dont share, and also combined them for a set of food items in both cuisines.
+>>> 
+>>> 
+>>> friend_ages={"Zakia":19, "Zahed":20, "Mahbub":19,}
+>>> friend_ages["Zakia"]=21
+>>> print (friend_ages)
+{'Zakia': 21, 'Zahed': 20, 'Mahbub': 19}
+>>> 
+>>> #I have made a dictionary of my friends and their ages, then i made a correction to one of their age and finally printed it.
+>>> 
+>>> 
+>>> grades= [89, 94,93,87]
+>>> total= sum(grades)
+>>> length = len(grades)
+>>> average= total/length
+>>> print (average)
+90.75
+>>> 
+>>> #I have take 4 grades and put them in a list of grades, then found the sum and amount of grades or length. Lastly, i found the average by dividing total/length to find the average grade which was printed
+>>> 
