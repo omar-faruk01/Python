@@ -1,0 +1,157 @@
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> friend= "Zakia"
+>>> user_name=input("Enter your username: ")
+Enter your username: Zakia
+>>> if user_name==friend:
+	print("Hello, Friend!")
+
+	
+Hello, Friend!
+>>> #I have utilized an if statement to define my friend as Zakia, and when she enters her username then she will be shown Hello, Friend!
+>>> 
+>>> 
+>>> name=input("Enter your name: ")
+Enter your name: Zakia
+>>> print(bool(name))
+True
+>>> if name:
+	print("We know your name.")
+
+	
+We know your name.
+>>> #Next we do the same thing using a boolean if statement
+>>> 
+>>> 
+>>> friends=["Zakia", "Adam", "Rolf"]
+>>> family=["Wahidul", "Khawsar"]
+>>> user_name= input("Enter your name: ")
+Enter your name: Khawsar
+>>> if user_name in friends:
+	print("Hello, My Friend!")
+elif user_name in family:
+	print("Hello, Family!")
+else:
+	print("I dont know you.")
+
+	
+Hello, Family!
+>>> #I have used the if statement using two lists and the elif command.
+>>> 
+>>> 
+>>> is_learning=True
+>>> while is_learning:
+	print("Your're learning")
+	is_learning=False
+
+	
+Your're learning
+>>> 
+>>> is_learning=True
+>>> while is_learning:
+	print("You're learning")
+	user_input=input("Are you still learning?")
+	is_learning=user_input=="yes"
+
+	
+You're learning
+Are you still learning?No
+>>> 
+>>> #I utilize the while loop in order to display that i am learning, then i have it ask me if i still am or not to determine if i am still learning or not. If answered yes, it would continue to loop.
+>>> 
+>>> 
+>>> friends=["Zakia", "Rold", "Adam"]
+>>> for friend in friends:
+	print(friend)
+
+	
+Zakia
+Rold
+Adam
+>>> 
+>>> for _ in range (10,24,17):
+	print(_)
+
+	
+10
+>>> #Using a foor loop to display list of friends and then using a range
+>>> 
+>>> students=[
+	{"name":"Rolf", "grade":79},
+	{"name":"Zakia", "grade":99},
+	{"name":"Adam", "grade":89},
+	]
+>>> for student in students:
+	name=student["name"]
+	grade=student["grade"]
+	print (f"{name} has a grade of {grade}.")
+
+	
+Rolf has a grade of 79.
+Zakia has a grade of 99.
+Adam has a grade of 89.
+>>> 
+>>> #Advance for loop using a dictionary
+>>> 
+>>> friend_ages={"Zakia":19, "Adam":18, "Rolf":20}
+>>> for age in friend_ages.values():
+	print(age)
+
+	
+19
+18
+20
+>>> for name,age in friend_ages.items():
+	print(f"{name} is {age} years old.")
+
+	
+Zakia is 19 years old.
+Adam is 18 years old.
+Rolf is 20 years old.
+>>> 
+>>> #for loop iterating over dictionaries
+>>> 
+>>> 
+>>> cars=["ok","ok","ok","faulty", "ok","ok"]
+>>> for status in cars:
+	if status=="faulty":
+		print("Stopping the production line!")
+		break
+	print(f"This car is {status}.")
+	print("Shipping new car to customer!")
+
+	
+This car is ok.
+Shipping new car to customer!
+This car is ok.
+Shipping new car to customer!
+This car is ok.
+Shipping new car to customer!
+Stopping the production line!
+>>> 
+>>> 
+>>> #Break syntax in the scenario of a car being tests before being shipped out to customer
+>>> 
+>>> 
+>>> for status in cars:
+	if status=="faulty":
+		print("Found faultry car, skipping ...")
+		continue
+	print (f"This car is {status}.")
+	print("Shipping new car to customer!")
+
+	
+This car is ok.
+Shipping new car to customer!
+This car is ok.
+Shipping new car to customer!
+This car is ok.
+Shipping new car to customer!
+Found faultry car, skipping ...
+This car is ok.
+Shipping new car to customer!
+This car is ok.
+Shipping new car to customer!
+>>> 
+>>> #Continue syntax in the same scenario of a car being tested before being shipped out to consumer
+>>> 
